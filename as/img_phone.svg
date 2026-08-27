@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" width="100%" height="100%">
+    <defs>
+      <linearGradient id="phoneBg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1E1B4B" /><stop offset="100%" stop-color="#09081E" />
+      </linearGradient>
+      <linearGradient id="screenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#6366F1" /><stop offset="50%" stop-color="#EC4899" /><stop offset="100%" stop-color="#3B82F6" />
+      </linearGradient>
+    </defs>
+    <rect width="300" height="180" fill="url(#phoneBg)" />
+    <circle cx="150" cy="90" r="65" fill="#6366F1" opacity="0.25" />
+    <rect x="115" y="30" width="70" height="125" rx="14" fill="#1E293B" stroke="#64748B" stroke-width="3" />
+    <rect x="120" y="36" width="60" height="113" rx="10" fill="url(#screenGlow)" />
+    <rect x="138" y="40" width="24" height="8" rx="4" fill="#0F172A" />
+    <circle cx="145" cy="44" r="2" fill="#10B981" />
+    <circle cx="225" cy="70" r="20" stroke="#EC4899" stroke-width="1.5" fill="none" opacity="0.5" />
+    <circle cx="75" cy="120" r="15" stroke="#3B82F6" stroke-width="1.5" fill="none" opacity="0.5" />
+  </svg>
