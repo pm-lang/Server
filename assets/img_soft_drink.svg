@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" width="100%" height="100%">
+    <defs>
+      <linearGradient id="sodaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#08203E" /><stop offset="100%" stop-color="#0A0F1D" />
+      </linearGradient>
+      <linearGradient id="canGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#E63D17" /><stop offset="50%" stop-color="#FF5A36" /><stop offset="100%" stop-color="#B91C1C" />
+      </linearGradient>
+    </defs>
+    <rect width="300" height="180" fill="url(#sodaBg)" />
+    <circle cx="150" cy="90" r="65" fill="#2D68FF" opacity="0.2" />
+    <g transform="rotate(12 150 90)">
+      <rect x="120" y="40" width="60" height="100" rx="10" fill="url(#canGrad)" />
+      <ellipse cx="150" cy="40" rx="30" ry="8" fill="#D1D5DB" />
+      <ellipse cx="150" cy="140" rx="30" ry="8" fill="#9CA3AF" />
+      <path d="M 130 65 Q 150 90 170 65" stroke="#FFF" stroke-width="4" fill="none" opacity="0.8" />
+    </g>
+    <rect x="75" y="105" width="28" height="28" rx="4" fill="rgba(255,255,255,0.25)" stroke="#93C5FD" stroke-width="1.5" transform="rotate(20 89 119)" />
+    <rect x="195" y="55" width="24" height="24" rx="4" fill="rgba(255,255,255,0.25)" stroke="#93C5FD" stroke-width="1.5" transform="rotate(-15 207 67)" />
+    <circle cx="100" cy="70" r="4" fill="#93C5FD" opacity="0.8" />
+    <circle cx="210" cy="120" r="5" fill="#93C5FD" opacity="0.8" />
+    <circle cx="130" cy="30" r="3" fill="#FFF" opacity="0.9" />
+  </svg>

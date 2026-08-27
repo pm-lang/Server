@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5A36" />
+      <stop offset="50%" stop-color="#FFA800" />
+      <stop offset="100%" stop-color="#2D68FF" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFDFC4" />
+      <stop offset="100%" stop-color="#F0B58D" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C1B18" />
+      <stop offset="100%" stop-color="#150C0A" />
+    </linearGradient>
+    <linearGradient id="jacketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA800" />
+      <stop offset="100%" stop-color="#FF5A36" />
+    </linearGradient>
+    <linearGradient id="glassesGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141522" />
+      <stop offset="100%" stop-color="#2D68FF" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle Backdrop -->
+  <circle cx="200" cy="200" r="195" fill="url(#bgGrad)" />
+  <circle cx="200" cy="200" r="185" fill="#141522" />
+
+  <!-- Ambient Studio Lighting Glow -->
+  <circle cx="290" cy="110" r="80" fill="#FF5A36" opacity="0.3" filter="url(#softGlow)" />
+  <circle cx="110" cy="290" r="90" fill="#2D68FF" opacity="0.35" filter="url(#softGlow)" />
+
+  <!-- Studio Design Elements Floating (Creative Director Props) -->
+  <path d="M 50 140 L 70 120 L 90 140 L 70 160 Z" fill="#FFA800" opacity="0.4" />
+  <circle cx="340" cy="150" r="8" fill="#10B981" opacity="0.6" />
+  <circle cx="330" cy="240" r="12" fill="#FF5A36" opacity="0.5" />
+  <rect x="55" y="220" width="22" height="22" rx="4" fill="#2D68FF" opacity="0.4" transform="rotate(25 66 231)" />
+
+  <!-- Character Group -->
+  <g filter="url(#dropShadow)">
+    <!-- Shoulders & Jacket -->
+    <path d="M 100 380 Q 200 330 300 380 L 320 400 L 80 400 Z" fill="url(#jacketGrad)" />
+    <!-- Inner Shirt / Top -->
+    <path d="M 155 350 Q 200 380 245 350 L 255 400 L 145 400 Z" fill="#F4F4FB" />
+    <path d="M 180 340 L 200 375 L 220 340 Z" fill="#2D68FF" />
+
+    <!-- Neck -->
+    <path d="M 175 270 L 175 325 Q 200 340 225 325 L 225 270 Z" fill="url(#skinGrad)" />
+    <path d="M 175 300 Q 200 320 225 300 L 225 325 Q 200 340 175 325 Z" fill="#000" opacity="0.1" />
+
+    <!-- Hair Back Bun -->
+    <circle cx="200" cy="115" r="48" fill="url(#hairGrad)" />
+    <!-- Hair Bun Scrunchie / Tie -->
+    <ellipse cx="200" cy="148" rx="26" ry="10" fill="#FF5A36" />
+
+    <!-- Head & Jaw -->
+    <path d="M 140 190 Q 140 280 200 285 Q 260 280 260 190 Q 260 140 200 140 Q 140 140 140 190 Z" fill="url(#skinGrad)" />
+
+    <!-- Ears -->
+    <circle cx="138" cy="205" r="16" fill="url(#skinGrad)" />
+    <circle cx="262" cy="205" r="16" fill="url(#skinGrad)" />
+    <!-- Modern Creative Earring Rings -->
+    <circle cx="135" cy="216" r="6" stroke="#FFA800" stroke-width="2.5" fill="none" />
+    <circle cx="265" cy="216" r="6" stroke="#FFA800" stroke-width="2.5" fill="none" />
+
+    <!-- Hair Front / Bangs / Waves -->
+    <path d="M 136 185 Q 150 135 200 138 Q 250 135 264 185 Q 245 160 200 162 Q 155 160 136 185 Z" fill="url(#hairGrad)" />
+    <path d="M 136 185 Q 140 240 148 250 Q 142 210 146 175 Z" fill="url(#hairGrad)" />
+    <path d="M 264 185 Q 260 240 252 250 Q 258 210 254 175 Z" fill="url(#hairGrad)" />
+
+    <!-- Eyebrows -->
+    <path d="M 158 186 Q 175 180 188 185" stroke="#2C1B18" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <path d="M 212 185 Q 225 180 242 186" stroke="#2C1B18" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+    <!-- Eyes (Warm, Expressive, Sparkle) -->
+    <ellipse cx="173" cy="200" rx="9" ry="11" fill="#2C1B18" />
+    <circle cx="170" cy="196" r="3.5" fill="#FFF" />
+    <circle cx="175" cy="204" r="1.5" fill="#FFF" />
+    <ellipse cx="227" cy="200" rx="9" ry="11" fill="#2C1B18" />
+    <circle cx="224" cy="196" r="3.5" fill="#FFF" />
+    <circle cx="229" cy="204" r="1.5" fill="#FFF" />
+
+    <!-- Eyelashes -->
+    <path d="M 163 194 Q 173 189 183 194" stroke="#150C0A" stroke-width="2.5" fill="none" />
+    <path d="M 217 194 Q 227 189 237 194" stroke="#150C0A" stroke-width="2.5" fill="none" />
+
+    <!-- Stylish Modern Round Glasses -->
+    <circle cx="173" cy="200" r="18" stroke="url(#glassesGrad)" stroke-width="3.5" fill="rgba(255,255,255,0.12)" />
+    <circle cx="227" cy="200" r="18" stroke="url(#glassesGrad)" stroke-width="3.5" fill="rgba(255,255,255,0.12)" />
+    <path d="M 191 198 Q 200 194 209 198" stroke="url(#glassesGrad)" stroke-width="3.5" fill="none" />
+    <path d="M 155 198 L 138 196" stroke="url(#glassesGrad)" stroke-width="3" />
+    <path d="M 245 198 L 262 196" stroke="url(#glassesGrad)" stroke-width="3" />
+
+    <!-- Nose -->
+    <path d="M 197 210 Q 200 226 206 226 Q 203 228 194 227" stroke="#D98A5B" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+    <!-- Friendly Smile -->
+    <path d="M 182 245 Q 200 264 218 245" stroke="#D94B38" stroke-width="3.5" stroke-linecap="round" fill="#D94B38" />
+    <path d="M 186 245 Q 200 254 214 245" fill="#FFF" />
+
+    <!-- Subtle Rosy Cheeks -->
+    <circle cx="158" cy="226" r="9" fill="#FF5A36" opacity="0.25" filter="url(#softGlow)" />
+    <circle cx="242" cy="226" r="9" fill="#FF5A36" opacity="0.25" filter="url(#softGlow)" />
+  </g>
+</svg>
